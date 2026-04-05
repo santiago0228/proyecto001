@@ -1,0 +1,77 @@
+body {
+    background-color: #1a2a6c; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.tarjeta-exito {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+}
+
+h3 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contenedor-qr {
+    margin: 20px 0;
+    padding: 15px;
+    border: 2px dashed #fffffd;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.imagen-qr {
+    width: 200px;
+    height: 200px;
+    display: block;
+}
+
+.id-asistente {
+    font-weight: bold;
+    color: #555;
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.btn-imprimir {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-imprimir:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.btn-imprimir:active {
+    transform: translateY(0);
+}
+
+@media print {
+    .btn-imprimir {
+        display: none;
+    }
+    body {
+        background: white;
+    }
+}
